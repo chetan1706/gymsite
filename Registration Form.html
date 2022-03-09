@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+    <link rel="shortcut icon" href="img\Gym Logo.jpg" type="image/X-icon">
+    <title>Registration Form</title>
+  
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link href="Registration Form.css" type="text/css" rel="Stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</head>
+<body>
+<fieldset>
+    <!-- Fieldset-Heading-Label-Section -->
+    <legend style="text-align:center;">
+	    <!-- Gym-Logo-Section -->
+		<img id="Gym-Logo" src="img/Gym Logo.jpg">
+	</legend>
+		
+	<!-- Fieldset-Content-Section -->
+	<section>
+	    <form>
+		    <!-- Form-Heading-Section -->
+			<br>
+			<h1 style="text-decoration:underline; text-align:center;">
+			    MEMBER&nbsp REGISTRATION&nbsp FORM
+			</h1><br>
+			
+			<!-- Basic-Details -->
+			<table cellpadding="25px" cellspacing="10px">
+				<tr>
+					<td>Title <input type="text" placeholder="(Mr/Mrs/Ms)"></td>
+					<td>Gender <input type="text" placeholder="(Male/Female)" required></td>
+					<td>Date of Birth <input type="date" required></td>
+				</tr>
+			
+				<!-- Name-Details -->
+				<tr>
+					<td>First Name <input type="text" required></td>
+					<td>Middle Name <input type="text"></td>
+					<td>Last Name <input type="text"></td>
+				</tr>
+			
+				<!-- Address-Details -->
+				<tr>
+					<td><input type="text" placeholder="(Residency Address)" required></td>
+					<td><input type="text" placeholder="(City-Pincode)" required></td>
+					<td><input type="text" placeholder="(State)" required></td>
+				</tr>
+			
+				<!-- Contact-Details -->
+				<tr>
+					<td>Telephone <input type="tel" maxlength="10"></td>
+					<td>Mobile Number<input type="tel" maxlength="10" required></td>
+					<td>Email <input type="email" required></td>
+				</tr>
+			
+				<!-- Occupation-Details -->
+				<tr>
+					<td>Occupation <input type="text"></td>
+					<td>Company <input type="text"></td>
+					<td>Company Address <input type="text"></td>
+				</tr>
+			
+				<!-- Body-Measurment-Details -->
+				<tr>
+					<td>Height <input id="height" type="float" placeholder="(in cm)"></td>
+					<td>Weight <input id="weight" type="float" placeholder="(in Kg)"></td>
+					<td><button id="btn" style="font-size:22px;">Body Mass Index</button> <span id="result"></span><td>
+				</tr>
+			</table>
+		</form>
+		
+		<!-- Medical Questionaire -->
+		<form>
+		    <!-- Form-Heading-Section -->
+		    <h1 style="text-decoration:underline; margin:40px;">Medical Questionaire</h1>
+			
+			<!-- Form-Content-Section -->
+			<ol>
+			    <li>
+				    Have you ever or do you have any of the following?
+					
+					<!-- Options-table-section -->
+					<table cellpadding="10px" cellspacing="10px">
+					    <tr>
+						    <td><input type="checkbox"> Heart Disease</td>
+							<td><input type="checkbox"> Cardiovascular Condition</td>
+							<td><input type="checkbox"> Dizziness</td>
+							<td><input type="checkbox"> Blackouts</td>
+							<td><input type="checkbox"> Fainting</td>
+						</tr>
+						<tr>
+						    <td><input type="checkbox"> Asthma</td>
+							<td><input type="checkbox"> High/Low Blood Pressure</td>
+							<td><input type="checkbox"> Arthritis</td>
+							<td><input type="checkbox"> Diabetes</td>
+							<td><input type="checkbox"> Epilepsy/Fits</td>
+						</tr>
+						<tr>
+						    <td><input type="checkbox"> Gout</td>
+							<td><input type="checkbox"> Family Hx of Heart Disease</td>
+							<td><input type="checkbox"> Infectious Disease</td>
+							<td><input type="checkbox"> Bone Fracture</td>
+							<td><input type="checkbox"> Muscles/Tissue Damage</td>
+						</tr>
+					</table>
+				</li>
+				<li>
+				    Do you have any problems/injuries in the following areas? (please tick and explain to the best of your ability):
+					<!-- Options-table-section -->
+					<table cellpadding="10px" cellspacing="10px">
+					    <tr>
+						    <td><input type="checkbox"> Knees</td>
+							<td><input type="checkbox"> Lower Back</td>
+							<td><input type="checkbox"> Neck/Shoulders</td>
+							<td><input type="checkbox"> Hips/Pelvis</td>
+							<td><input type="checkbox"> Flexibility</td>
+							<td><input type="checkbox"> Other</td>
+						</tr>
+					</table>
+					<input type="text" placeholder="(explain here)">
+				</li><br>
+				<li>
+				    Are you pregnant? &nbsp 
+					<input type="radio" name="opt">Yes 
+					<input type="radio" checked name="opt">No
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+					<span>If so, how many weeks? <input type="number"></span>
+				</li><br>
+				<li>
+				    Are you currently doing any regular physical activity, what and how many times per week? <input type="text">
+				</li><br>
+				<li>
+				    Have you had surgery in the last 5 years, if yes, when and what? <input type="text">
+				</li><br>
+				<li>
+				    Do you smoke, if yes how many per day, and for how long have you smoked? <input type="text" placeholder="( how many? )"> <input type="text" placeholder="( since when? )"> 
+				</li><br>
+				<li>
+				    Are you on any medication, if yes what and when do you take? <input type="text">
+				</li><br>
+				<li>
+				    Anything else we need to know? (if unsure write it down) <input type="text">
+				</li>
+			</ol>
+		</form><br><br>
+		
+		<!-- Acknowledgment -->
+		<form>
+		    <!-- Form-Heading-Section -->
+		    <h1 style="text-decoration:underline; text-align:center;">ACKNOWLEDMENT&nbsp RELEASE&nbsp and ASSUMPTION&nbsp OF&nbsp RISK</h1><br>
+			
+			<!-- Form-Content-Section -->
+			<p>
+			    <b>Warning: </b>This is an important document, which affects your legal rights and obligations. Please read it carefully and do not sign it unless you understand it. If you have any questions, please ask.
+			</p>
+			<p>
+			    <b>Acknowledgment of Risks, Injury and Obligations</b><br>I acknowledge that the activities I am to undertake have potential dangers and by participating in them I am exposed to certain risks.I acknowledge and understand that while participating in any such activities:
+			</p>
+			<ul>
+			    <li>
+				    I may get infected with coronavirus during this covid-19 pandemic;
+				</li>
+				
+			    <li>
+				    I may be injured physically, mentally or may die;
+				</li>
+				
+				<li>
+				    Any physical conditions I may have, of which I may or may not be aware of, which I may or may not have disclosed to the gym or its staff, may be aggravated or worsened by my participation;
+				</li>
+				
+				<li>
+				    My personal property may be lost or damaged
+				</li>
+				
+				<li>
+				    Other persons participating in such activities may cause me injury or may damage my property;
+				</li>
+				
+				<li>
+				    I may cause injury to other persons or damage their property;
+				</li>
+				
+				<li>
+				    The conditions in which the activities are conducted may vary without warning;
+				</li>
+				
+				<li>
+				    I may be injured or die or suffer damage to my property as a result of negligence or breach of contract of the Fitness Centre operator, or its servants or agents; 
+				</li>
+				
+				<li>
+				    There may be no or inadequate facilities for treatment or transport of me if I am injured.
+				</li>
+				
+				<li>
+				    I assume the risk of, and the responsibility for any injury, illness, death or property resulting from my participation in any activities.
+				</li>
+			</ul>
+			<p>
+			    <b>Release and Indemnity to Fitness Centre Operator</b><br>In the consideration of the acceptance of my payment (or guest status) for participating in any activity (except to the extent that the centre may be precluded by statute) I agree to release and indemnify the Fitness Centre Operator and staff as follows:
+			</p>
+			<ul>
+			    <li>
+				    I participate in the activities at my sole risk and responsibility;
+				</li>
+				
+				<li>
+				    I release, indemnify and hold harmless the Fitness Centre Operator, its servants and agents, from and against all and any actions or claims which may be made by me or on my behalf or by other parties for or in respect of arising out of any injury or loss; 
+				</li>
+				
+				<li>
+				    damage or death caused to me or my property whether by negligence, breach of contract or in any way whatsoever.
+				</li>
+			</ul>
+			<p>
+			    I also agree that in the event that I am injured or my property is lost or damaged, I will bring no claim, legal or otherwise, against the Fitness Centre operator or its servants and agents, in respect of that injury, loss or damage.
+			</p><br>
+			
+			<!-- Document-Signing-Section -->
+			<p>
+			    Before signing this document, I have read and acknowledged and know how it affects my legal rights. 
+			</p>
+			
+			<table cellpadding="5px" cellspacing="5px">
+			    <tr>
+				    <td>
+					    <b>Full Name: </b>
+					</td>
+					<td>
+						<input type="text" placeholder="(Enter your full name)" required>
+					</td>
+				</tr>
+				<tr>
+				    <td>
+					    <b>Date: </b>
+					</td>
+					<td>
+						<input type="date">
+					</td>
+				</tr>
+				<tr>
+				    <td>
+					    <b>Signature: </b>
+					</td>
+					<td>
+						<input type="text" placeholder="(type 'AGREED' to Sign)" required>
+					</td>
+				</tr>
+			</table>
+		</form><br><br>
+		
+		<!-- Parents-Consent-Form-Section -->
+		<form>
+		    <!-- Form-Heading-Section -->
+		    <h1 style="text-decoration:underline; text-align:center;">WHERE&nbsp PARTICIPANT&nbsp IS&nbsp UNDER&nbsp 18&nbsp YEARS&nbsp OF&nbsp AGE<br>(Parent/Gaurdian to read and sign)</h1><br>
+			
+			<!-- Form-Content-Section -->
+			<p>I, <input type="text"> being a parent or legal guardian of the person named in this Acknowledgment and Release hereby acknowledge and agree:
+			</p>
+			<ul>
+			    <li>
+				    I have read the whole document and understand it; 
+				</li>
+				
+				<li>
+					I consent to the person, named in this Acknowledgement and Release, participating in the activity; and
+				</li>
+				
+				<li>
+					I am aware of the risks, dangers and obligations set out above in this Acknowledgement and Release.
+				</li>
+			</ul>
+			<p>
+			   In consideration of the person named in the Acknowledgement and Release being accepted to participate in any activity, I agree to release and indemnify the Fitness Centre operator, its servants and agents, in the same manner and to the same effect and extent as if I were the person first named in this Acknowledgement and Release and the person participating in any of these activities.
+			</p>
+			<!-- Document-Signing-Section -->
+			<p>
+			    Before signing this document, I have read and acknowledged and know how it affects my legal rights. 
+			</p>
+			
+			<table cellpadding="5px" cellspacing="5px">
+			    <tr>
+				    <td>
+					    <input type="radio" name="choice" checked>Parent&nbsp&nbsp&nbsp&nbsp 
+					    <input type="radio" name="choice">Guardian
+					</td>
+				</tr>
+				<tr>
+				    <td>
+					    <b>Full Name of Parent/Guardian: </b>
+					</td>
+					<td>
+						<input type="text" placeholder="(Enter your full name)" required>
+					</td>
+				</tr>
+				<tr>
+				    <td>
+					    <b>Date of Signing: </b>
+					</td>
+					<td>
+						<input type="date">
+					</td>
+				</tr>
+				<tr>
+				    <td>
+					    <b>Signature: </b>
+					</td>
+					<td>
+						<input type="text" placeholder="(type 'AGREED' to Sign)" required>
+					</td>
+				</tr>
+			</table>
+		</form><br><br>
+	</section>
+
+</fieldset><br>
+
+<!-- Payment-Checkout-Link-Section -->
+<a href="Payment.html" style="text-decoration:none;">
+	<button id="Proceed-to-pay-button" type="submit">
+		Proceed to Pay
+	</button>
+</a><br>
+
+<!-- Javascript-Section -->
+<script>
+
+    <!-- BMI-Calculator-Section -->
+    window.onload = () => { 
+        let button = document.querySelector("#btn"); 
+        button.addEventListener("click", calculateBMI); 
+	}; 
+
+    function calculateBMI() { 
+        let height = parseInt(document.querySelector("#height").value); 
+        let weight = parseInt(document.querySelector("#weight").value); 
+        let result = document.querySelector("#result"); 
+
+        if (height === "" || isNaN(height))  
+            result.innerHTML = "Enter Valid Height!"; 
+        else if (weight === "" || isNaN(weight))  
+            result.innerHTML = "Enter Valid Height"; 
+        else { 
+            let bmi = (weight / ((height * height)/ 10000)).toFixed(2); 
+
+
+        // Dividing as per the bmi conditions 
+
+        if (bmi < 18.6) result.innerHTML = `Under Weight : <span>${bmi}</span>`; 
+        
+		else if (bmi >= 18.6 && bmi < 24.9) result.innerHTML = `Normal : <span>${bmi}</span>`; 
+        
+		else result.innerHTML = `Over Weight : <span>${bmi}</span>`; 
+		
+		} 
+    }
+</script>
+
+</body>
+</html>

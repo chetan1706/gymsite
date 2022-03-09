@@ -1,0 +1,120 @@
+/* start: main body styles */
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+	background-color: black;
+}
+
+#body-header {
+    height: 60vh;
+    opacity: 0.8;
+    background-image: url(img/Wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+	background: url(https://c4.wallpaperflare.com/wallpaper/485/471/623/gradient-dark-background-wallpaper-preview.jpg) top center no-repeat;
+    background-size: cover;
+	box-shadow: 0px 0px 10px 3px red;
+}
+
+#main {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#gym-logo {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#gym-logo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px 5px red;
+}
+
+#content {
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: white;
+    line-height: 32px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+/* end: main body styles */
+
+/* start: button style */
+button{
+	background-color: #fff003; 
+    color: red; 
+    font-size: 20px;
+	border-radius:10px;
+}
+
+button:hover{
+	background-color: red; 
+    color: #fff003;
+	box-shadow: 0px 0px 10px 5px white;
+}
+/* end: button style */
+
+/* start: span tag content */
+span{
+	padding: 30px;
+    margin: auto;
+	color: white;
+	font-size: 26px;
+}
+/* end: span tag content */
+
+/* start: footer content styles */
+#footer-content h1,h2,p{
+    margin: auto;
+	color: white;
+	font-size: 26px;
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#footer-content h1{
+	font-size: 35px;
+}
+
+#footer-content img{
+	margin: auto;
+    display: flex;
+}
+/* end: footer content styles */
+
+/* start : linked link style */
+#linked{
+	color:white;
+	box-shadow:0px 0px 2px 2px yellow;
+}
+
+#linked:hover{
+	box-shadow:0px 0px 2px 2px red;
+}
+/* end : linked link styles */

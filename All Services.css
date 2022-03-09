@@ -1,0 +1,133 @@
+/*Start:Global styles*/
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+fieldset{
+	margin:0px;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+	box-shadow: 0px 0px 2px 2px white;
+}
+
+div:nth-child(2n) {
+	color:white;
+	background-color:black;
+}
+
+div:nth-child(2n + 1) {
+	color:white;
+    background: url(img/bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+div:target {
+    background-color:black;
+} 
+
+summary{
+	font-size:40px;
+	text-align:center;
+	text-decoration:underline;
+	text-shadow:2.5px 2.5px 5px lightgreen;
+	font-style:initial;
+}
+
+p{
+	text-align:justify;
+}
+/*End : Global styles*/
+
+/*Start : Header Section Styles*/
+#page-heading{
+	font-family:fantasy;
+	color: Black;
+	font-size: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 50px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 20px 10px 10px 20px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a {
+    color: black;
+	font-size:25px;
+    text-decoration: none;
+	box-shadow: 0px 0px 3px 3px red ;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    border-bottom: 5px solid black;
+	box-shadow: 0px 0px 5px 5px yellow ;
+}
+
+.text-center {
+    text-align: center;
+}
+/*End : Header Section Styles*/
+
+/*start : Back-to-top-button-section*/
+#myBtn{
+  display: none; 
+  height: 75px;
+  width: 75px;
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: none;
+  color: green; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 50%; 
+  font-size: 45px; 
+}
+
+#myBtn:hover {
+  background-color: lightgrey;
+}
+/*end : Back-to-top-button-section */
+
+/*Start : Payment-button-section */
+#payment-button {
+	color:black; 
+	font-size:30px; 
+	background-color:lightgrey; 
+	border:2px solid green;
+}
+
+#payment-button:hover {
+	background-color:white;
+	box-shadow:0px 0px 2px 2px white;
+}
+/*End : Payment-button-section */

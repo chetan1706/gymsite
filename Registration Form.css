@@ -1,0 +1,55 @@
+/* Start : Fieldset Heading Section Styles */
+#Gym-Logo{
+	height:200px;
+	width:200px;
+	border-radius:50%;
+}
+/* End : Fieldset Heading Section Styles */
+
+/* Start : Global Styles */
+input[type=text],[type=email]{
+	border-top-style:hidden;
+	border-right-style:hidden;
+	border-left-style:hidden;
+}
+
+form{
+	margin:0px 100px 0px 100px;
+}
+
+body{
+	font-size:22px;
+}
+
+input{
+	font-size:20px;
+}
+
+ol{
+	font-weight:600;
+}
+
+tr td{
+	font-weight:400;
+}
+/* End : Global Styles */
+
+/* Start : Proceed-to-pay button styles */
+#Proceed-to-pay-button {
+  cursor: pointer;
+  background: #233EDE;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1.25rem 3rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Roboto', 'Helvetica', 'Sans-serif';
+  letter-spacing: 2px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* End : Proceed-to-pay button styles */
